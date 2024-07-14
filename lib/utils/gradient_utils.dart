@@ -4,6 +4,7 @@ import 'package:animated_mesh_gradient/utils/app_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:palette_generator/palette_generator.dart';
 
+/// Generates the mesh colors via image
 Future<List<Color>> generateMeshGradientFromImage(ImageProvider image) async {
   await Future.delayed(1.seconds);
   final paletteGenerator = await PaletteGenerator.fromImageProvider(

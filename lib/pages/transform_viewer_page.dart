@@ -10,9 +10,6 @@ import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:mesh_gradient/mesh_gradient.dart';
 
-const decodeWidth = 4;
-const decodeHeight = 3;
-
 class TransformViewerPage extends StatefulWidget {
   const TransformViewerPage({super.key});
 
@@ -106,7 +103,9 @@ class _TransformViewerPageState extends State<TransformViewerPage> {
                       },
                     ),
                   ),
-                ].divide(const SizedBox(height: 16)),
+                ].divide(
+                  const SizedBox(height: 16),
+                ),
               ),
             ),
           ),

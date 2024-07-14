@@ -79,42 +79,6 @@ class _GradientViewerPageState extends State<GradientViewerPage> {
               ),
             ),
           ),
-          // Align(
-          //   alignment: Alignment.bottomCenter,
-          //   // add a linear gradient
-          //   child: Container(
-          //     height: 80,
-          //     decoration: BoxDecoration(
-          //       gradient: LinearGradient(
-          //         stops: [-2, 1],
-          //         begin: Alignment.bottomCenter,
-          //         end: Alignment.topCenter,
-          //         colors: [
-          //           Colors.white,
-          //           Colors.white.withOpacity(0),
-          //         ],
-          //       ),
-          //     ),
-          //   ),
-          // ),
-          // Align(
-          //   alignment: Alignment.topCenter,
-          //   child: AnimatedContainer(
-          //     duration: 600.millis,
-          //     curve: Curves.easeInOut,
-          //     height: 140,
-          //     decoration: BoxDecoration(
-          //       gradient: LinearGradient(
-          //         begin: Alignment.bottomCenter,
-          //         end: Alignment.topCenter,
-          //         colors: [
-          //           Colors.white.withOpacity(0),
-          //           Colors.white,
-          //         ],
-          //       ),
-          //     ),
-          //   ),
-          // ),
           const SafeArea(
             child: Align(
               alignment: Alignment.topLeft,
@@ -125,54 +89,6 @@ class _GradientViewerPageState extends State<GradientViewerPage> {
           ),
         ],
       ),
-      // body: Center(
-      //   child: AnimatedSize(
-      //     alignment: Alignment.topCenter,
-      //     duration: 600.millis,
-      //     curve: Curves.easeInOut,
-      //     child: SizedBox(
-      //       width: double.infinity,
-      //       child: Padding(
-      //         padding: const EdgeInsets.symmetric(horizontal: 24.0),
-      //         child: Column(
-      //           mainAxisAlignment: MainAxisAlignment.center,
-      //           children: <Widget>[
-      //             ImageViewer(
-      //               image: Image.file(
-      //                 File(widget.image.path),
-      //                 fit: BoxFit.cover,
-      //               ),
-      //               onImage: (image) async {
-      //                 // setState(() {
-      //                 //   this.image = image;
-      //                 //   this.meshColors = null;
-      //                 // });
-      //                 // final meshColors = await generateMeshGradientFromImage(
-      //                 //   Image.file(File(image.path)).image,
-      //                 // );
-      //                 // setState(() => this.meshColors = meshColors);
-      //               },
-      //             ),
-      //             // Animated mesh gradient
-      //             AnimatedBox(
-      //               width: 400,
-      //               height: 240,
-      //               child: AnimatedMeshGradient(
-      //                 colors: widget.meshColors,
-      //                 options: AnimatedMeshGradientOptions(
-      //                   amplitude: 50,
-      //                   grain: 0.1,
-      //                   frequency: 5,
-      //                   speed: 5,
-      //                 ),
-      //               ),
-      //             ),
-      //           ].divide(const SizedBox(height: 16)),
-      //         ),
-      //       ),
-      //     ),
-      //   ),
-      // ),
     );
   }
 }
